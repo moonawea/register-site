@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>User</title>
+</head>
+
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <form action="" class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">
+            <i class='bx bx-search'></i>
+        </button>
+    </form>
+</header>
+
+<div class="background"></div>
+
+<div class="container">
+    <div class="content">
+        <h2 class="logo"><i class='bx bxl-firebase'></i>CodeDiana</h2>
+        <div class="text-sci">
+            <h2>Welcome! <br> <span>To My New Website</span></h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque doloremque, ea eligendi iure iusto
+                minima minus molestias obcaecati officiis pariatur repudiandae soluta. Ab, earum expedita explicabo
+                harum mollitia ullam.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="log-box">
+        <div class="form-box login">
+            <form id="myForm" onsubmit="validateForm(event)">
+                <h2>Sign In</h2>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                </div>
+
+               <div class="input-box">
+                   <span class="icon"><i class='bx bx-user'></i></span>
+                   <input type="text" id="firstname" name="firstname" minlength="3" required>
+                   <label for="firstname">First Name:</label>
+               </div>
+
+               <div class="input-box">
+                   <span class="icon"><i class='bx bx-user'></i></span>
+                   <input type="text" id="lastname" name="lastname" minlength="3" required>
+                   <label for="lastname">Last Name:</label>
+               </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bx-user'></i></span>
+                    <input type="text" id="username" name="username" minlength="3" required>
+                    <label for="username">User Name:</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" id="password" name="password" minlength="3" maxlength="8" required>
+                    <label for="password">Password:</label>
+
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" id="confirmPassword" name="confirmPassword" minlength="3" maxlength="8" required>
+                    <label for="confirmPassword">Confirm Password:</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+
+                <input type="submit" value="Submit" class="btn">
+
+                <div class="login-register">
+                    <p>Don't have an account?
+                        <a href="#" class="register-link">Sign Up</a>
+                    </p>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="./script/script.js"></script>
+</body>
+</html>
